@@ -1,26 +1,15 @@
 # Dependencies
 markdown:         redcarpet
-highlighter:      pygments
+highlighter:      rouge
+encoding:         utf-8
 
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
+permalink: /theme/:title
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title:            WoBootstrap
+tagline:          'Bootstrap Themes & Templates'
+description:      'A collection of <strong>free</strong> CSS3, HTML5 & WordPress themes, templates, and plugins built using <a href="http://getbootstrap.com/">Bootstrap</a> and released under the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT license</a> license.'
+url:              http://wobootstrap.com
 baseurl:          /
 
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
-
-paginate:         5
-
-# Custom vars
-version:          2.1.0
-
-github:
-  repo:           https://github.com/poole/hyde
+paginate:         6
