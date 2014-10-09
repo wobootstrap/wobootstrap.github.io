@@ -31,6 +31,9 @@
  * Update the foundational and global aspects of the page.
  */
 
+html {
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
 @media (min-width: 48em) {
   html {
     font-size: 16px;
@@ -76,6 +79,7 @@
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
+  font-family: "Abril Fatface", serif;
   font-size: 3.25rem;
 }
 
@@ -118,13 +122,13 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding-top:    2rem;
-  padding-bottom: 2rem;
+  padding-top:    4rem;
+  padding-bottom: 4rem;
 }
 
 @media (min-width: 48em) {
   .content {
-    *max-width: 38rem;
+    max-width: 38rem;
     margin-left: 20rem;
     margin-right: 2rem;
   }
@@ -132,8 +136,8 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 64em) {
   .content {
-    margin-left: 20rem;
-    margin-right: 2rem;
+    margin-left: 22rem;
+    margin-right: 4rem;
   }
 }
 

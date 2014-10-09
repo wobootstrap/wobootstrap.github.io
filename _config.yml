@@ -1,9 +1,10 @@
 # Dependencies
 markdown:         redcarpet
-highlighter:      rouge
-encoding:         utf-8
+highlighter:      pygments
 
-permalink: /theme/:title
+# Permalinks
+permalink:        /theme/:title
+relative_permalinks: true
 
 # Setup
 title:            WoBootstrap
@@ -12,4 +13,14 @@ description:      'A collection of <strong>free</strong> CSS3, HTML5 & WordPress
 url:              http://wobootstrap.com
 baseurl:          /
 
-paginate:         6
+author:
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/poole/hyde
