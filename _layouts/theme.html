@@ -1,0 +1,77 @@
+---
+layout: default
+---
+<div class="post">
+    <div class="row">
+        <div class="col-sm-8">
+            <article class="theme">
+                <div class="thumbnail">
+                    <img src="{{ page.theme_thumbnail }}" alt="{{ page.title }}">
+                </div>
+                <h1>
+                    {{ page.title }}
+                    <br>
+                    <small class="text-muted">{{ page.date | date_to_long_string }}</small>
+                </h1>
+                {{ content }}
+            </article>
+            {% include disqus.html %}
+        </div>
+        <div class="col-md-4">
+            <aside class="widget">
+                {% if page.theme_zip_download %}
+                <a class="btn btn-lg btn-primary btn-block" href="{{ page.theme_zip_download }}">
+                    <i class="fa fa-file-archive-o fa-3x"></i>
+                    <small>Download</small>
+                    <br>
+                    <span>.zip file</span>
+                </a>
+                {% endif %}
+                {% if page.theme_view_source %}
+                <a class="btn btn-lg btn-success btn-block" href="{{ page.theme_view_source }}">
+                    <i class="fa fa-github fa-3x"></i>
+                    <small>View project on</small>
+                    <br>
+                    <span>GitHub</span>
+                </a>
+                {% endif %}
+                {% if page.theme_live_preview  %}
+                <a class="btn btn-lg btn-info btn-block" href="{{ page.theme_live_preview }}">
+                    <i class="fa fa-eye fa-3x"></i>
+                    <small>See</small>
+                    <br>
+                    <span>Live Preview</span>
+                </a>
+                {% endif %}
+            </aside>
+            <aside class="widget license">
+                <h6 class="text-uppercase">#License Info</h6>
+                {% if page.theme_license == 'apache' %}
+                <p>This {{ page.theme_type }} is released under the terms of the <a href="http://en.wikipedia.org/wiki/Apache_License">Apache License</a>.</p>
+                {% else %}
+                <p>This {{ page.theme_type }} is released under the terms of the <a href="http://en.wikipedia.org/wiki/MIT_License">MIT license</a>.</p>
+                {% endif %}
+            </aside>
+            <aside class="widget related">
+                <h6 class="text-uppercase">#Related Theme</h6>
+                <ul class="related-posts">
+                    {% for post in site.related_posts limit:1 %}
+                    <li>
+                        <a href="{{ post.url }}" class="thumbnail">
+                            <img src="{{ post.theme_thumbnail }}" alt="{{ post.title }}">
+                        </a>
+                        <h4>
+                            <a href="{{ post.url }}">
+                                {{ post.title }}
+                            </a>
+                            <br>
+                            <small>{{ post.date | date_to_string }}</small>
+                        </h4>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </aside>
+        </div>
+    </div>
+</div>
+
