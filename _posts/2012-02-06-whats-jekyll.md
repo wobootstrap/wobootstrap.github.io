@@ -1,12 +1,25 @@
 ---
-layout: post
-title: What's Jekyll?
+layout: theme
+title: Agency - Bootstrap Portfolio Theme
+
+theme_thumbnail: http://startbootstrap.com/assets/img/templates/agency.jpg
+theme_zip_download: http://startbootstrap.com/downloads/agency.zip
+theme_live_preview: http://startbootstrap.com/templates/agency/
+theme_view_source: https://github.com/IronSummitMedia/startbootstrap/tree/gh-pages/templates/agency
+theme_license: apache
+theme_type: theme
 ---
 
-[Jekyll](http://jekyllrb.com) is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From [the project's readme](https://github.com/mojombo/jekyll/blob/master/README.markdown):
+Agency is a stylish, one page Bootstrap theme for agencies and small businesses. The design of Agency is based off of the Golden PSD Theme by [Mathavan Jaya](https://www.behance.net/MathavanJaya). You can download the PSD verison of this theme at [FreebiesXpress.com](http://freebiesxpress.com/gallery/golden-free-one-page-web-template/).
 
-  > Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.
+### Features:
 
-It's an immensely useful tool and one we encourage you to use here with Hyde.
-
-Find out more by [visiting the project on GitHub](https://github.com/mojombo/jekyll).
+* Fully responsive
+* Custom collapsing navigation with active classes, smooth page scrolling, and responsive fallback stylings
+* Services section with CSS only circle icons by Font Awesome
+* Portfolio grid with modal window popup previews for portfolio item details
+* About section with a responsive timeline, special thanks to Bootsnipp
+* Team member section with circle profile images and social media links
+* Working PHP contact form with validation - just add your email address to the PHP file included
+* Footer with social links, copyright information, and other links
+* LESS files included for deeper customization options
